@@ -6,4 +6,7 @@ spring:
     url: jdbc:mysql://192.168.1.245:3306/mysql?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: sa
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.xiaohu.warehouse.model
